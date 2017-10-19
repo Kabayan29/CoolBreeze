@@ -23,6 +23,7 @@ namespace CoolBreeze.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            Microsoft.Azure.Mobile.MobileCenter.Configure("84fd358e-3677-43e6-9b26-50bb36900f07");
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
